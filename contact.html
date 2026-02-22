@@ -7,67 +7,78 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-    /* 背景画像の設定 */
     body {
-        /* 【重要】ここを実際の画像ファイル名（例: background.jpg 等）に書き換えてください */
-        background-image: url('top-bg.jpg'); 
+        /* トップページと同じ背景画像を設定 */
+        background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
         margin: 0;
         padding: 0;
-        font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+        font-family: sans-serif;
     }
 
-    /* ヘッダーの背景（画像に重なって見にくいのを防ぐ） */
-    header {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 10px 0;
-        text-align: center;
+    /* ヘッダーの文字を白くし、影をつけて見やすくする */
+    header h1, header nav a {
+        color: white !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        text-decoration: none;
     }
 
-    /* お問い合わせフォームの白いボックス */
-    .contact-container {
+    /* お問い合わせフォームのエリア（ここが白背景になるので文字が読めます） */
+    .contact-card {
         padding: 40px 20px;
         max-width: 600px;
         margin: 60px auto;
-        background: rgba(255, 255, 255, 0.95); /* 95%の白 */
+        background: rgba(255, 255, 255, 0.95); /* フォームの土台だけ白くする */
         border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    /* フォーム内の文字色は黒（#333）に固定して読みやすくする */
+    .contact-card h2, .contact-card p, .contact-card label {
+        color: #333 !important;
+    }
+    
+    .input-label {
+        font-weight: bold;
+        margin-top: 15px;
+        display: block;
+        color: #333;
     }
 </style>
 </head>
 <body>
 
-<header>
-    <h1 style="color:#0b3d91; margin:0;">CrossBridge Partners</h1>
-    <nav style="margin-top:10px;">
-        <a href="index.html" style="margin:0 10px; text-decoration:none; color:#333;">トップ</a>
-        <a href="company.html" style="margin:0 10px; text-decoration:none; color:#333;">会社概要</a>
-        <a href="contact.html" style="margin:0 10px; text-decoration:none; color:#0b3d91; font-weight:bold;">お問い合わせ</a>
+<header style="text-align:center; padding:20px;">
+    <h1>CrossBridge Partners</h1>
+    <nav>
+        <a href="index.html" style="margin:0 10px;">トップ</a>
+        <a href="company.html" style="margin:0 10px;">会社概要</a>
+        <a href="contact.html" style="margin:0 10px;">お問い合わせ</a>
     </nav>
 </header>
 
-<section class="contact-container">
-    <h2 style="color:#0b3d91; border-bottom: 2px solid #0b3d91; padding-bottom: 10px;">お問い合わせ</h2>
-    <p style="font-size: 0.9em; color: #555;">通常2営業日以内にご返信いたします。</p>
+<section class="contact-card">
+    <h2>お問い合わせ</h2>
+    <p>通常2営業日以内にご返信いたします。</p>
 
     <form action="https://formsubmit.co/h06826900@gmail.com" method="POST">
         
-        <p>会社名</p>
+        <label class="input-label">会社名</label>
         <input type="text" name="会社名" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; box-sizing: border-box;" required>
 
-        <p>ご担当者名</p>
+        <label class="input-label">ご担当者名</label>
         <input type="text" name="お名前" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; box-sizing: border-box;" required>
 
-        <p>メールアドレス</p>
+        <label class="input-label">メールアドレス</label>
         <input type="email" name="email" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; box-sizing: border-box;" required>
 
-        <p>電話番号</p>
+        <label class="input-label">電話番号</label>
         <input type="tel" name="電話番号" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; box-sizing: border-box;">
 
-        <p>ご相談内容</p>
+        <label class="input-label">ご相談内容</label>
         <textarea name="お問い合わせ内容" rows="5" style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px; box-sizing: border-box;" required></textarea>
 
         <br><br>
@@ -75,7 +86,7 @@
     </form>
 </section>
 
-<footer style="text-align:center; padding:20px; background:#0b3d91; color:white;">
+<footer style="text-align:center; padding:20px; color:white;">
     <p>© 2026 CrossBridge Partners</p>
 </footer>
 
