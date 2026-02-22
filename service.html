@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サービスの流れ | CrossBridge Partners</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: white;
+    }
+
+    header { text-align: center; padding: 20px; }
+    header h1, header nav a { color: white; text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
+
+    .main-container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    /* 各セクションの白いボックス */
+    .flow-section {
+        background: rgba(255, 255, 255, 0.95);
+        color: #333;
+        padding: 30px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .flow-section h2 {
+        color: #0b3d91;
+        border-left: 5px solid #0b3d91;
+        padding-left: 15px;
+        margin-bottom: 25px;
+    }
+
+    /* ステップの並び */
+    .step-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .step-number {
+        background: #0b3d91;
+        color: white;
+        min-width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+    .step-content {
+        flex: 1;
+    }
+
+    .step-title {
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+
+    /* スマホ調整 */
+    @media (max-width: 600px) {
+        header h1 { font-size: 1.5rem; }
+        nav a { margin: 0 5px; font-size: 0.9rem; }
+        .flow-section { padding: 20px; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>CrossBridge Partners</h1>
+    <nav>
+        <a href="index.html">トップ</a>
+        <a href="company.html">会社概要</a>
+        <a href="service.html" style="font-weight:bold;">サービスの流れ</a>
+        <a href="contact.html">お問い合わせ</a>
+    </nav>
+</header>
+
+<div class="main-container">
+
+    <section class="flow-section">
+        <h2>1. ご契約までの流れ</h2>
+        
+        <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <div class="step-title">お問い合わせ</div>
+                <div>お問い合わせフォームより、ご相談内容をご送信ください。</div>
+            </div>
+        </div>
+
+        <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <div class="step-title">ヒアリング（WEBまたは対面）</div>
+                <div>現状の課題やご要望を詳細に伺い、最適なプランを検討します。</div>
+            </div>
+        </div>
+
+        <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <div class="step-title">ご提案・お見積り</div>
+                <div>支援内容と費用対効果をまとめたプランをご提示します。</div>
+            </div>
+        </div>
+
+        <div class="step-item">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <div class="step-title">ご契約</div>
+                <div>契約内容に合意をいただき、業務委託契約を締結します。</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flow-section">
+        <h2>2. プロジェクト開始からご請求の流れ</h2>
+        
+        <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <div class="step-title">キックオフ</div>
+                <div>担当チームとの顔合わせを行い、具体的なスケジュールを確定します。</div>
+            </div>
+        </div>
+
+        <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <div class="step-title">サービス提供・レポート</div>
+                <div>定期的な打ち合わせと進捗報告を行いながら、業務を遂行します。</div>
+            </div>
+        </div>
+
+        <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <div class="step-title">月次レポート・検収</div>
+                <div>当月の成果物や活動内容をご確認いただきます。</div>
+            </div>
+        </div>
+
+        <div class="step-item">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <div class="step-title">ご請求</div>
+                <div>月末締め翌月末払いで、請求書を発行させていただきます。</div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer style="text-align:center; padding:20px;">
+    <p>© 2026 CrossBridge Partners</p>
+</footer>
+
+</body>
+</html>

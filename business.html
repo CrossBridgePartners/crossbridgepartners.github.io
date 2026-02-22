@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>事業内容 | CrossBridge Partners</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: white;
+    }
+
+    header { text-align: center; padding: 20px; }
+    header h1, header nav a { color: white; text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
+
+    .main-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    /* 事業紹介のカード形式 */
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .service-card {
+        background: rgba(255, 255, 255, 0.95);
+        color: #333;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+        color: #0b3d91;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .service-card h3 {
+        color: #0b3d91;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #0b3d91;
+        display: inline-block;
+    }
+
+    .service-card p {
+        line-height: 1.8;
+        font-size: 0.95rem;
+    }
+
+    .service-list {
+        margin-top: 15px;
+        padding-left: 20px;
+    }
+
+    .service-list li {
+        margin-bottom: 8px;
+        list-style-type: square;
+        color: #555;
+    }
+
+    /* スマホ調整 */
+    @media (max-width: 600px) {
+        header h1 { font-size: 1.5rem; }
+        nav { display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { margin: 5px 10px; font-size: 0.9rem; }
+        .service-grid { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>CrossBridge Partners</h1>
+    <nav>
+        <a href="index.html">トップ</a>
+        <a href="company.html">会社概要</a>
+        <a href="business.html" style="font-weight:bold;">事業内容</a>
+        <a href="service.html">サービスの流れ</a>
+        <a href="contact.html">お問い合わせ</a>
+    </nav>
+</header>
+
+<div class="main-container">
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2 style="font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">BUSINESS CONTENT</h2>
+        <p style="text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">私たちは、企業の成長を繋ぐ架け橋（Cross Bridge）として、最適なソリューションを提供します。</p>
+    </div>
+
+    <div class="service-grid">
+        <div class="service-card">
+            <span class="service-icon">📊</span>
+            <h3>経営・戦略コンサルティング</h3>
+            <p>現状の経営課題を分析し、中長期的な成長に向けた戦略を策定します。市場調査から実行支援まで、ハンズオンでサポートいたします。</p>
+            <ul class="service-list">
+                <li>事業戦略・ロードマップ策定</li>
+                <li>新規事業開発支援</li>
+                <li>組織構造の最適化</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <span class="service-icon">🤝</span>
+            <h3>パートナーシップ構築支援</h3>
+            <p>企業間のアライアンスやM&A、業務提携の仲介・交渉をサポート。最適なビジネスパートナーとのマッチングを実現し、シナジーを最大化します。</p>
+            <ul class="service-list">
+                <li>提携先候補の選定・アプローチ</li>
+                <li>交渉アドバイザリー</li>
+                <li>PMI（成約後の統合プロセス）支援</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <span class="service-icon">💡</span>
+            <h3>業務プロセス改革（BPR）</h3>
+            <p>最新のITツール活用やオペレーションの見直しにより、業務の効率化とコスト削減を実現。DX推進の第一歩を共に歩みます。</p>
+            <ul class="service-list">
+                <li>業務フローの可視化と改善</li>
+                <li>クラウドツールの導入支援</li>
+                <li>社内研修・スキルトランスファー</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer style="text-align:center; padding:40px 20px;">
+    <p>© 2026 CrossBridge Partners</p>
+</footer>
+
+</body>
+</html>
