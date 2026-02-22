@@ -1,13 +1,28 @@
 body {
-    /* linear-gradientを消して、urlだけにします */
+    /* 背景画像の設定（現在のものを維持） */
     background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
-    
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+
+    /* 全体の文字色を白にする */
+    color: #ffffff; 
+}
+
+/* タイトルや文章をよりクッキリさせる設定 */
+h1, h2, p, a {
+    color: #ffffff !important; /* 強制的に白にする */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* 黒い影をつけて浮かび上がらせる */
+}
+
+/* ナビゲーションメニューのリンク */
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
 .header {
     display: flex;
@@ -114,6 +129,7 @@ nav a:hover {
     line-height: 1.8;
     color: #aaa;
 }
+
 
 
 
