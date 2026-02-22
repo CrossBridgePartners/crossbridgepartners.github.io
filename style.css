@@ -71,12 +71,18 @@ nav a:hover {
 }
 
 .card {
+    .card {
     background: #1c1c1c;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+}
 .card h3 {
     color: #00bcd4;
 }
@@ -101,3 +107,4 @@ nav a:hover {
     line-height: 1.8;
     color: #aaa;
 }
+
