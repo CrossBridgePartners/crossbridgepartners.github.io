@@ -14,6 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 28px 60px;
+    background:　#000;
     border-bottom: 1px solid #222;
 }
 
@@ -113,6 +114,7 @@ nav a:hover {
     line-height: 1.8;
     color: #aaa;
 }
+
 
 
 
