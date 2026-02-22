@@ -17,28 +17,29 @@
     </nav>
 </header>
 
-<section style="padding:40px 20px; max-width:800px; margin:auto;">
-    <h2>お問い合わせ</h2>
+<section style="padding:40px 20px; max-width:800px; margin:40px auto; background: rgba(255,255,255,0.95); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+    <h2 style="color:#0b3d91;">お問い合わせ</h2>
     <p>通常2営業日以内にご返信いたします。</p>
 
-    <form>
+    <form action="https://formsubmit.co/h06826900@gmail.com" method="POST">
+        
         <p>会社名</p>
-        <input type="text" style="width:100%; padding:8px;">
+        <input type="text" name="会社名" style="width:100%; padding:8px;" required placeholder="株式会社〇〇">
 
         <p>ご担当者名</p>
-        <input type="text" style="width:100%; padding:8px;">
+        <input type="text" name="お名前" style="width:100%; padding:8px;" required placeholder="山田 太郎">
 
         <p>メールアドレス</p>
-        <input type="email" style="width:100%; padding:8px;">
+        <input type="email" name="email" style="width:100%; padding:8px;" required placeholder="example@mail.com">
 
         <p>電話番号</p>
-        <input type="tel" style="width:100%; padding:8px;">
+        <input type="tel" name="電話番号" style="width:100%; padding:8px;" placeholder="03-xxxx-xxxx">
 
         <p>ご相談内容</p>
-        <textarea rows="5" style="width:100%; padding:8px;"></textarea>
+        <textarea name="お問い合わせ内容" rows="5" style="width:100%; padding:8px;" required placeholder="ご相談内容を入力してください"></textarea>
 
         <br><br>
-        <button style="padding:10px 20px; background:#0b3d91; color:white; border:none;">送信</button>
+        <button type="submit" style="padding:12px 40px; background:#0b3d91; color:white; border:none; cursor:pointer; font-weight:bold; width:100%; border-radius: 4px;">送信する</button>
     </form>
 </section>
 
