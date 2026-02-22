@@ -19,6 +19,7 @@ body {
     font-size: 38px;
     letter-spacing: 3px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 nav a {
     color: #fff;
@@ -109,6 +110,7 @@ nav a:hover {
     line-height: 1.8;
     color: #aaa;
 }
+
 
 
 
