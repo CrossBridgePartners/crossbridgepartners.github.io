@@ -14,8 +14,10 @@ body {
 }
 
 .logo {
+   .logo {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 
 nav a {
@@ -107,4 +109,5 @@ nav a:hover {
     line-height: 1.8;
     color: #aaa;
 }
+
 
