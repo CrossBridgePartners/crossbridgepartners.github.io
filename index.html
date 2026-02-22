@@ -1,93 +1,83 @@
 <!DOCTYPE html>
 <html lang="ja">
-<header style="padding: 20px 10px; text-align: center;">
-    <h1 style="color: white; margin: 0 0 15px 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">CrossBridge Partners</h1>
-    
-    <nav style="
-        display: flex; 
-        flex-wrap: wrap;      /* 入りきらない時に自動で折り返す設定 */
-        justify-content: center; 
-        gap: 10px 20px;       /* 縦と横の隙間（縦10px、横20px） */
-    ">
-        <a href="index.html" style="color: white; text-decoration: none; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">トップ</a>
-        <a href="company.html" style="color: white; text-decoration: none; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">会社概要</a>
-        <a href="business.html" style="color: white; text-decoration: none; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">事業内容</a>
-        <a href="service.html" style="color: white; text-decoration: none; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">サービスの流れ</a>
-        <a href="contact.html" style="color: white; text-decoration: none; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">お問い合わせ</a>
-    </nav>
-</header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrossBridge Partners | トップ</title>
 <style>
-     /* スマホ（画面幅が600px以下）の場合の調整 */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 1.5rem; /* タイトルを少し小さく */
-    }
-    
-    nav {
-        display: flex; /* 横に並べる */
-        justify-content: center; /* 中央寄せ */
+    /* 1. 背景画像の設定（ここで背景を復活させます） */
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin: 0;
         padding: 0;
+        font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+        color: white;
+        min-height: 100vh;
+    }
+
+    /* 2. ヘッダーとメニューの設定 */
+    header {
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin: 0 0 20px 0;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;      /* 幅が足りない時に自動で改行 */
+        justify-content: center;
+        gap: 15px 25px;       /* メニュー同士の隙間（縦15px、横25px） */
+        max-width: 800px;
+        margin: 0 auto;
     }
 
     nav a {
-        margin: 0 5px !important; /* 横の隙間を最小限にする */
-        font-size: 0.9rem; /* 文字を少し小さくして1行に収める */
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+        white-space: nowrap;  /* メニュー項目自体が途中で改行されるのを防ぐ */
+        font-size: 1.1rem;
     }
-    
-    .contact-card, .company-container {
-        margin: 20px 10px; /* 左右の余白を削って幅を広げる */
-        padding: 20px 15px;
+
+    nav a:hover {
+        text-decoration: underline;
     }
-}
-</style>    
+
+    /* メインコンテンツ（キャッチコピーなど） */
+    .hero-text {
+        text-align: center;
+        margin-top: 100px;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    }
+</style>
+</head>
 <body>
 
-<header class="header">
-    <div class="logo">CrossBridge Partners</div>
+<header>
+    <h1>CrossBridge Partners</h1>
     <nav>
-    <a href="index.html">トップ</a>
-    <a href="company.html">会社概要</a>
-    <a href="business.html">事業内容</a>
-    <a href="service.html">サービスの流れ</a>
-    <a href="contact.html">お問い合わせ</a>
-</nav>
+        <a href="index.html">トップ</a>
+        <a href="company.html">会社概要</a>
+        <a href="business.html">事業内容</a>
+        <a href="service.html">サービスの流れ</a>
+        <a href="contact.html">お問い合わせ</a>
+    </nav>
 </header>
 
-<section class="hero">
-    <div class="hero-inner">
-        <h1>BUSINESS SUPPORT<br>WITH REAL FIELD POWER</h1>
-        <p>現場力 × スピード × 品質管理<br>
-        岐阜を拠点に信頼できる外注パートナーとして支えます。</p>
-        <a href="contact.html" class="btn">お問い合わせ</a>
-    </div>
-</section>
-    
-<section class="strength">
-    <h2>私たちの強み</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>迅速対応</h3>
-            <p>急な案件にも柔軟に対応。スピード重視の現場力。</p>
-        </div>
-        <div class="card">
-            <h3>品質管理</h3>
-            <p>検品・梱包まで一貫管理。ミスを減らす仕組み。</p>
-        </div>
-        <div class="card">
-            <h3>岐阜拠点</h3>
-            <p>地域密着で小回りの利く外注パートナー。</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 CrossBridge Partners</p>
-</footer>
+<div class="hero-text">
+    <h2 style="font-size: 3rem;">Bridging the Future.</h2>
+    <p style="font-size: 1.2rem;">企業の成長を加速させる、戦略的パートナーシップ。</p>
+</div>
 
 </body>
 </html>
-
-
-
-
-
