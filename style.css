@@ -80,3 +80,24 @@ nav a:hover {
 .card h3 {
     color: #00bcd4;
 }
+.hero {
+    position: relative;
+    background: linear-gradient(135deg, #000, #1a1a1a, #000);
+    padding: 120px 20px;
+}
+
+.hero-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    margin-top: 20px;
+    line-height: 1.8;
+    color: #aaa;
+}
