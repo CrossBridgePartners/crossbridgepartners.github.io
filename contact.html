@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>お問い合わせ | CrossBridge Partners</title>
-<link rel="stylesheet" href="style.css">
-
-<style>
-    body {
-        /* トップページと同じ背景画像を設定 */
-        background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-    }
-
-    /* ヘッダーの文字を白くし、影をつけて見やすくする */
-    header h1, header nav a {
-        color: white !important;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        text-decoration: none;
-    }
-
-    /* お問い合わせフォームのエリア（ここが白背景になるので文字が読めます） */
-    .contact-card {
-        padding: 40px 20px;
-        max-width: 600px;
-        margin: 60px auto;
-        background: rgba(255, 255, 255, 0.95); /* フォームの土台だけ白くする */
-        border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-
-    /* フォーム内の文字色は黒（#333）に固定して読みやすくする */
-    .contact-card h2, .contact-card p, .contact-card label {
-        color: #333 !important;
-    }
-    
-    .input-label {
-        font-weight: bold;
-        margin-top: 15px;
-        display: block;
-        color: #333;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | CrossBridge Partners</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        header h1, header nav a {
+            color: white !important;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-decoration: none;
+        }
+        .contact-card {
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 60px auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .contact-card h2, .contact-card p, .contact-card label {
+            color: #333 !important;
+        }
+        .input-label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+            color: #333;
+        }
+        /* メニューの折り返し対応 */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 20px;
+        }
+    </style>
 </head>
 <body>
 
 <header style="text-align:center; padding:20px;">
     <h1>CrossBridge Partners</h1>
     <nav>
-    <a href="index.html">トップ</a>
-    <a href="company.html">会社概要</a>
-    <a href="business.html">事業内容</a>
-    <a href="service.html">サービスの流れ</a>
-    <a href="contact.html">お問い合わせ</a>
-</nav>
+        <a href="index.html">トップ</a>
+        <a href="company.html">会社概要</a>
+        <a href="business.html">事業内容</a>
+        <a href="service.html">サービスの流れ</a>
+        <a href="contact.html">お問い合わせ</a>
+    </nav>
 </header>
 
 <section class="contact-card">
@@ -94,5 +92,3 @@
 
 </body>
 </html>
-
-
