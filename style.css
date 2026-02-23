@@ -1,3 +1,4 @@
+/* ====================== */
 /* 基本リセット */
 * {
   margin: 0;
@@ -5,14 +6,18 @@
   box-sizing: border-box;
 }
 
+/* ====================== */
+/* body 共通スタイル */
 body {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   color: #fff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
+/* ====================== */
 /* header */
 header {
   text-align: center;
@@ -43,28 +48,95 @@ nav a:hover {
   color: #C8A951;
 }
 
-/* hero */
+/* ====================== */
+/* heroテキスト（トップページ用） */
 .hero-text {
   text-align: center;
+  padding: 60px 20px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
 }
 
-/* strengths */
-.strengths-container {
+/* ====================== */
+/* strengths / serviceカード 共通 */
+.main-container {
   max-width: 1000px;
   margin: 40px auto;
-  padding: 40px 20px;
+  padding: 0 20px;
+}
+
+.strengths-container,
+.service-grid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
   justify-items: center;
 }
 
-.strength-card {
+.strength-card,
+.service-card {
   width: 100%;
   max-width: 320px;
   text-align: center;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease;
 }
 
+.strength-card:hover,
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.strength-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.strength-card h3,
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #0b3d91;
+  border-bottom: 2px solid #0b3d91;
+  display: inline-block;
+}
+
+.strength-card p,
+.service-card p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.service-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.service-list li {
+  margin-bottom: 8px;
+  list-style-type: square;
+  color: #555;
+}
+
+/* ====================== */
+/* footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: rgba(255,255,255,0.7);
+}
+
+/* ====================== */
 /* レスポンシブ */
 @media (max-width: 600px) {
   nav {
@@ -72,13 +144,47 @@ nav a:hover {
     align-items: center;
   }
 
+  nav a {
+    margin: 5px 10px;
+    font-size: 0.9rem;
+  }
+
   .hero-text {
     padding: 40px 15px;
+  }
+
+  .strengths-container,
+  .service-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 601px) {
-  .strengths-container {
+  .strengths-container,
+  .service-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
+}
+
+/* ====================== */
+/* ページごとの背景画像 */
+body.index-page {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                    url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
+}
+
+body.business-page {
+  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
+}
+
+body.company-page {
+  background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2070&auto=format&fit=crop');
+}
+
+body.service-page {
+  background-image: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=2070&auto=format&fit=crop');
+}
+
+body.contact-page {
+  background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=2070&auto=format&fit=crop');
 }
