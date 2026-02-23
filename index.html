@@ -4,159 +4,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CrossBridge Partners | トップ</title>
-<style>
-    /* 1. 背景画像と全体の設定 */
-    body {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        margin: 0;
-        padding: 0;
-        font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-        color: white;
-        min-height: 100vh;
-    }
-
-    /* 2. ヘッダーとメニュー（折り返し対応） */
-    header {
-        padding: 40px 10px;
-        text-align: center;
-    }
-
-    .logo {
-    margin: 0 0 20px 0;
-}
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px 25px;
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
-        white-space: nowrap;
-        font-size: 1.1rem;
-    }
-
-    nav a:hover { text-decoration: underline; }
-
-    /* 3. メインキャッチコピー */
-    .hero-text {
-        text-align: center;
-        padding: 60px 20px;
-        text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-    }
-
-    /* 4. 強みセクション（ここを復活させました） */
-    .strengths-container {
-        max-width: 1000px;
-        margin: 40px auto;
-        padding: 40px 20px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-    }
-
-    .strength-card {
-        background: rgba(255, 255, 255, 0.1); /* 透ける白 */
-        backdrop-filter: blur(10px);        /* すりガラス効果 */
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 30px;
-        border-radius: 15px;
-        text-align: center;
-        transition: transform 0.3s;
-    }
-
-    .strength-card:hover {
-        transform: translateY(-10px);
-        background: rgba(255, 255, 255, 0.2);
-    }
-
-    .strength-card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-        color: #fff;
-    }
-
-    .strength-card p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        color: #eee;
-    }
-
-    @media (max-width: 600px) {
-        header h1 { font-size: 1.8rem; }
-        .hero-text h2 { font-size: 2rem; }
-    }
-
-   .logo img {
-    width: clamp(160px, 22vw, 300px);
-    height: auto;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="index-page">
 
 <header>
-    <h1 class="logo">
-  <a href="index.html">
-    <img src="logo.png" alt="CrossBridge Partners">
-  </a>
-</h1>
-    <nav>
-        <a href="index.html">トップ</a>
-        <a href="company.html">会社概要</a>
-        <a href="business.html">事業内容</a>
-        <a href="service.html">サービスの流れ</a>
-        <a href="contact.html">お問い合わせ</a>
-
-        <a href="https://www.linkedin.com/in/crossbridgepartners" 
-           target="_blank" 
-           class="linkedin-btn">
-           LinkedIn
-        </a>
-    </nav>
+  <h1 class="logo">
+    <a href="index.html"><img src="logo.png" alt="CrossBridge Partners"></a>
+  </h1>
+  <nav>
+    <a href="index.html">トップ</a>
+    <a href="company.html">会社概要</a>
+    <a href="business.html">事業内容</a>
+    <a href="service.html">サービスの流れ</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="https://www.linkedin.com/in/crossbridgepartners" target="_blank">LinkedIn</a>
+  </nav>
 </header>
+
 <div class="hero-text">
-    <h2 style="font-size: 3rem; margin-bottom: 10px;">Bridging the Future.</h2>
-    <p style="font-size: 1.3rem;">企業の成長の架け橋となる、パートナーシップ。</p>
+  <h2>Bridging the Future.</h2>
+  <p>企業の成長の架け橋となる、パートナーシップ。</p>
 </div>
 
 <section class="strengths-container">
-    <div class="strength-card">
-        <h3>経験豊富な専門性</h3>
-        <p>多岐にわたる業界での実績に基づき、お客様の課題に合わせた最適なソリューションを提案します。</p>
-    </div>
-    <div class="strength-card">
-        <h3>迅速な対応力</h3>
-        <p>市場の変化に即座に対応し、スピード感を持ってプロジェクトを推進・実行支援します。</p>
-    </div>
-    <div class="strength-card">
-        <h3>信頼のネットワーク</h3>
-        <p>広範なビジネスパートナーとの繋がりを活かす。</p>
-    </div>
+  <div class="strength-card">
+    <h3>経験豊富な専門性</h3>
+    <p>多岐にわたる業界での実績に基づき、お客様の課題に合わせた最適なソリューションを提案します。</p>
+  </div>
+  <div class="strength-card">
+    <h3>迅速な対応力</h3>
+    <p>市場の変化に即座に対応し、スピード感を持ってプロジェクトを推進・実行支援します。</p>
+  </div>
+  <div class="strength-card">
+    <h3>信頼のネットワーク</h3>
+    <p>広範なビジネスパートナーとの繋がりを活かす。</p>
+  </div>
 </section>
 
-<footer style="text-align:center; padding:40px; color:rgba(255,255,255,0.7);">
-    <p>© 2026 CrossBridge Partners</p>
+<footer>
+  <p>© 2026 CrossBridge Partners</p>
 </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
