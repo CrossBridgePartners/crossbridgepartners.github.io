@@ -56,7 +56,7 @@ nav a:hover {
   margin: 40px auto;
   padding: 40px 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 220px以上なら横に並ぶ */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* 220px以上なら横に並ぶ */
   gap: 20px;
   justify-items: center;
 }
@@ -115,3 +115,4 @@ footer {
     max-width: 90%;
   }
 }
+
