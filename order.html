@@ -1,127 +1,16 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>既存お客様用 仕事依頼フォーム | CrossBridge Partners</title>
-<link rel="stylesheet" href="style.css">
-<style>
-  body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-
-  header, footer {
-    text-align: center;
-    padding: 20px;
-    background: #0b3d91;
-    color: #fff;
-  }
-
-  .main-container {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  }
-
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #0b3d91;
-  }
-
-  form label {
-    display: block;
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-
-  form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-  }
-
-  form button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background: #0b3d91;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-
-  form button:hover {
-    background: #07407f;
-  }
-
-  @media (max-width: 600px) {
-    .main-container {
-      padding: 15px;
-      margin: 20px;
-    }
-  }
-</style>
-</head>
-<body>
-
-<header>
-  <h1>既存お客様用 仕事依頼フォーム</h1>
-   <nav>
-    <a href="index.html">トップ</a>
-    <a href="company.html">会社概要</a>
-    <a href="business.html">事業内容</a>
-    <a href="service.html">サービスの流れ</a>
-  　 <a href="contact.html">ご新規様用お問い合わせ</a>
-    <a href="order.html">既存のお客様用業務依頼</a>
-    <a href="https://www.linkedin.com/in/crossbridgepartners" target="_blank">LinkedIn</a>
-  </nav>
-</header>
-
-<div class="main-container">
-  <form action="https://formspree.io/f/YOUR_EXISTING_FORM_ID" method="POST">
-    <label>お名前
-      <input type="text" name="name" required>
-    </label>
-
-    <label>会社名
-      <input type="text" name="company" required>
-    </label>
-
-    <label>メールアドレス
-      <input type="email" name="email" required>
-    </label>
-
-    <label>電話番号
-      <input type="text" name="phone">
-    </label>
-
-    <label>依頼内容
-      <textarea name="message" rows="6" required></textarea>
-    </label>
-
-    <button type="submit">送信</button>
-  </form>
-</div>
-
-<footer>
-  <p>© 2026 CrossBridge Partners</p>
-</footer>
-
-</body>
-</html>
-
+<h2>既存のお客様向け 仕事依頼フォーム</h2>
+<form action="https://formspree.io/f/xpqjojaw" method="POST">
+  <label>お客様名
+    <input type="text" name="client_name" required>
+  </label>
+  <label>案件名
+    <input type="text" name="project_name" required>
+  </label>
+  <label>メールアドレス
+    <input type="email" name="email" required>
+  </label>
+  <label>依頼内容
+    <textarea name="details" rows="6" required></textarea>
+  </label>
+  <button type="submit">送信</button>
+</form>
