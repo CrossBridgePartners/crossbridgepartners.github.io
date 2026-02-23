@@ -1,164 +1,19 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ご新規様用問い合わせ | CrossBridge Partners</title>
-<link rel="stylesheet" href="style.css">
-<style>
-/* 基本リセット */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  color: #fff;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* header */
-header {
-  text-align: center;
-  padding: 30px 0;
-  background: rgba(0,0,0,0.6);
-}
-
-.logo img {
-  width: clamp(140px, 18vw, 220px);
-  height: auto;
-}
-
-nav {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #C8A951;
-}
-
-/* main container */
-.main-container {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-/* お問い合わせフォーム */
-.contact-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2列 */
-  gap: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-form label {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-}
-
-.contact-form textarea {
-  grid-column: 1 / -1; /* 横幅いっぱい */
-  resize: vertical;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-}
-
-.contact-form input {
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-}
-
-.contact-form button {
-  grid-column: 1 / -1; /* 横幅いっぱい */
-  padding: 10px 20px;
-  background: #0b3d91;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.contact-form button:hover {
-  background: #C8A951;
-}
-
-/* スマホ対応 */
-@media (max-width: 600px) {
-  .contact-form {
-    grid-template-columns: 1fr; /* 1列表示 */
-  }
-}
-</style>
-</head>
-<body class="contact-page">
-
-<header>
-  <h1 class="logo">
-    <a href="index.html"><img src="logo.png" alt="CrossBridge Partners"></a>
-  </h1>
-  <nav>
-    <a href="index.html">トップ</a>
-    <a href="company.html">会社概要</a>
-    <a href="business.html">事業内容</a>
-    <a href="service.html">サービスの流れ</a>
-    <a href="contact.html">ご新規様用お問い合わせ</a>
-    <a href="order.html">既存のお客様用業務依頼</a>
-    <a href="https://www.linkedin.com/in/crossbridgepartners" target="_blank">LinkedIn</a>
-  </nav>
-</header>
-
-<div class="main-container">
-  <div style="margin-bottom:50px;">
-    <h2>お問い合わせ</h2>
-    <p>ご質問やご依頼は、下記フォームよりお気軽にお問い合わせください。</p>
-  </div>
-
-  <form class="contact-form">
-    <label>お名前
-      <input type="text" name="name" required>
-    </label>
-    <label>会社名
-      <input type="text" name="company" required>
-    </label>
-    <label>メールアドレス
-      <input type="email" name="email" required>
-    </label>
-    <label>電話番号
-      <input type="text" name="phone" required>
-    </label>
-    <label>お問い合わせ内容
-      <textarea name="message" rows="6" required></textarea>
-    </label>
-    <button type="submit">送信</button>
-  </form>
-</div>
-
-<footer style="text-align:center; padding:40px 20px;">
-  <p>© 2026 CrossBridge Partners</p>
-</footer>
-
-</body>
-</html>
-
+<h2>新規お問い合わせフォーム</h2>
+<form action="https://formspree.io/f/maqdlbra" method="POST">
+  <label>お名前
+    <input type="text" name="name" required>
+  </label>
+  <label>会社名
+    <input type="text" name="company">
+  </label>
+  <label>メールアドレス
+    <input type="email" name="email" required>
+  </label>
+  <label>電話番号
+    <input type="text" name="phone">
+  </label>
+  <label>お問い合わせ内容
+    <textarea name="message" rows="6" required></textarea>
+  </label>
+  <button type="submit">送信</button>
+</form>
