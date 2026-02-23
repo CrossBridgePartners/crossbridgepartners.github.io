@@ -151,3 +151,76 @@ body::before {
 .hero-text p {
   text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
+
+/* ===== Business / Serviceカード共通スタイル ===== */
+.service-card {
+    background: rgba(255, 255, 255, 0.95); /* 半透明白背景 */
+    color: #333; /* 文字色を黒系に */
+    padding: 40px 30px; /* 内側余白 */
+    border-radius: 12px; /* 角丸 */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* 影で立体感 */
+    transition: transform 0.3s ease;
+    text-align: left; /* 必要に応じて中央揃えに変える */
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* アイコン（絵文字やSVG）用 */
+.service-icon {
+    font-size: 2.5rem;
+    color: #0b3d91; /* 青系 */
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* 見出し */
+.service-card h3 {
+    color: #0b3d91;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0b3d91;
+    display: inline-block;
+}
+
+/* 説明文 */
+.service-card p {
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* リスト */
+.service-list {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.service-list li {
+    margin-bottom: 8px;
+    list-style-type: square;
+    color: #555;
+}
+
+/* グリッド設定（横並び・中央揃え） */
+.service-grid,
+.strengths-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center; /* 中央揃え */
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 600px) {
+    .service-grid,
+    .strengths-container {
+        grid-template-columns: 1fr; /* 1列表示 */
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 320px;
+        text-align: center; /* スマホでは中央揃え */
+    }
+}
