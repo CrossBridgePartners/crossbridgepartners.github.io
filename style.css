@@ -163,6 +163,10 @@ nav a:hover {
   background-color: #123A5E;
 }    
     
+.logo img {
+  height: 45px;
+  width: auto;
+}
 
 
 
