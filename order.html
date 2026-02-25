@@ -1,16 +1,61 @@
-<h2>既存のお客様向け 仕事依頼フォーム</h2>
-<form action="https://formspree.io/f/xpqjojaw" method="POST">
-  <label>お客様名
-    <input type="text" name="client_name" required>
-  </label>
-  <label>案件名
-    <input type="text" name="project_name" required>
-  </label>
-  <label>メールアドレス
-    <input type="email" name="email" required>
-  </label>
-  <label>依頼内容
-    <textarea name="details" rows="6" required></textarea>
-  </label>
-  <button type="submit">送信</button>
-</form>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>既存のお客様用業務依頼 | CrossBridge Partners</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-page">
+
+<header>
+  <h1 class="logo">
+    <a href="index.html"><img src="logo.png" alt="CrossBridge Partners"></a>
+  </h1>
+  <nav>
+    <a href="index.html">トップ</a>
+    <a href="company.html">会社概要</a>
+    <a href="business.html">事業内容</a>
+    <a href="service.html">サービスの流れ</a>
+    <a href="contact.html">ご新規様用お問い合わせ</a>
+    <a href="existing.html">既存のお客様用業務依頼</a>
+  </nav>
+</header>
+
+<div class="main-container">
+  <div style="text-align:center; margin-bottom:40px;">
+    <h2>既存のお客様用業務依頼フォーム</h2>
+    <p>業務のご依頼・追加作業のご相談はこちらからお願いいたします。</p>
+  </div>
+
+  <form action="https://formspree.io/f/Formspree" method="POST" class="contact-form">
+    
+    <!-- フォーム識別用（メールに表示される） -->
+    <input type="hidden" name="フォーム種別" value="既存顧客用">
+
+    <label>会社名
+      <input type="text" name="company" required>
+    </label>
+
+    <label>ご担当者様名
+      <input type="text" name="name" required>
+    </label>
+
+    <label>メールアドレス
+      <input type="email" name="email" required>
+    </label>
+
+    <label>ご依頼内容
+      <textarea name="message" rows="6" required></textarea>
+    </label>
+
+    <button type="submit">送信</button>
+  </form>
+</div>
+
+<footer style="text-align:center; padding:40px 20px;">
+  <p>© 2026 CrossBridge Partners</p>
+</footer>
+
+</body>
+</html>
