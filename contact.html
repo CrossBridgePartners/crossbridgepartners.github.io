@@ -134,24 +134,36 @@ nav a:hover {
   <p>ご質問やご依頼は下記フォームよりお気軽にお問い合わせください。</p>
 
   <!-- Formspreeを使用 -->
-  <form action="https://formspree.io/f/maqdlbra" method="POST" class="contact-form">
-    <label>お名前
-      <input type="text" name="name" required>
-    </label>
-    <label>会社名
-      <input type="text" name="company" required>
-    </label>
-    <label>メールアドレス
-      <input type="email" name="email" required>
-    </label>
-    <label>電話番号
-      <input type="text" name="phone">
-    </label>
-    <label>お問い合わせ内容
-      <textarea name="message" rows="6" required></textarea>
-    </label>
-    <button type="submit">送信</button>
-  </form>
+  <form action="https://formspree.io/f/maqdlbra" method="POST" enctype="multipart/form-data" class="contact-form">
+  
+  <label>お名前
+    <input type="text" name="name" required>
+  </label>
+
+  <label>会社名
+    <input type="text" name="company" required>
+  </label>
+
+  <label>メールアドレス
+    <input type="email" name="email" required>
+  </label>
+
+  <label>電話番号
+    <input type="text" name="phone">
+  </label>
+
+  <label>添付ファイル（仕様書・画像など）
+    <input type="file" name="attachment">
+  </label>
+
+  <label>お問い合わせ内容
+    <textarea name="message" rows="6" required></textarea>
+  </label>
+
+  <input type="hidden" name="_subject" value="【新規問い合わせ】CrossBridge Partners">
+
+  <button type="submit">送信</button>
+</form>
 </div>
 
 <footer style="text-align:center; padding:40px 20px;">
@@ -160,3 +172,4 @@ nav a:hover {
 
 </body>
 </html>
+
