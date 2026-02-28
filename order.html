@@ -134,27 +134,39 @@ nav a:hover {
   <p>ご質問やご依頼は下記フォームよりお気軽にお問い合わせください。</p>
 
   <!-- Formspreeを使用 -->
-  <form action="https://formspree.io/f/xpqjojaw" method="POST" class="contact-form">
-    <label>お名前
-      <input type="text" name="name" required>
-    </label>
-    <label>会社名
-      <input type="text" name="company" required>
-    </label>
-    <label>案件タイトル
-      <textarea name="message" rows="2" required></textarea>
-    </label>
-    <label>希望単価・希望料金
-      <input type="text" name="Asking price">
-    </label>
-    <label>依頼内容詳細
-      <textarea name="message" rows="6" required></textarea>
-    </label>
-      <label>添付ファイル
-      <input type="hidden" name="_subject" value="【既存顧客からの業務依頼】CrossBridge Partners">
-    </label>
-    <button type="submit">送信</button>
-  </form>
+  <form action="https://formspree.io/f/xpqjojaw" 
+      method="POST" 
+      enctype="multipart/form-data" 
+      class="contact-form">
+
+  <input type="hidden" name="_subject" value="【既存顧客からの業務依頼】CrossBridge Partners">
+
+  <label>お名前
+    <input type="text" name="name" required>
+  </label>
+
+  <label>会社名
+    <input type="text" name="company" required>
+  </label>
+
+  <label>案件タイトル
+    <input type="text" name="project_title" required>
+  </label>
+
+  <label>希望単価・希望料金
+    <input type="text" name="asking_price">
+  </label>
+
+  <label>添付ファイル（仕様書・指示書など）
+    <input type="file" name="attachment">
+  </label>
+
+  <label>依頼内容詳細
+    <textarea name="details" rows="6" required></textarea>
+  </label>
+
+  <button type="submit">送信</button>
+</form>
 </div>
 
 <footer style="text-align:center; padding:40px 20px;">
@@ -163,4 +175,5 @@ nav a:hover {
 
 </body>
 </html>
+
 
