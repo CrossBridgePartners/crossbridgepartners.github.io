@@ -224,3 +224,9 @@ body::before {
         text-align: center; /* スマホでは中央揃え */
     }
 }
+
+.contact-form input[type="file"] {
+    background: white;
+    color: black;
+    padding: 8px;
+}
