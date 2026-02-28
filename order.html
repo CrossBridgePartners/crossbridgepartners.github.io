@@ -3,10 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>既存のお客様用業務依頼 | CrossBridge Partners</title>
+<title>既存のお客様用業務依頼| CrossBridge Partners</title>
 <link rel="stylesheet" href="style.css">
+<style>
+body {
+    background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.logo img {
+    width: clamp(140px, 18vw, 220px);
+    height: auto;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C8A951;
+}
+
+.main-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.main-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.main-container p {
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* フォーム */
+.contact-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #C8A951;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #b59142;
+}
+
+/* レスポンシブ */
+@media (max-width: 600px) {
+    .main-container {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+}
+</style>
 </head>
-<body class="contact-page">
+<body>
 
 <header>
   <h1 class="logo">
@@ -19,33 +125,31 @@
     <a href="service.html">サービスの流れ</a>
     <a href="contact.html">ご新規様用お問い合わせ</a>
     <a href="order.html">既存のお客様用業務依頼</a>
+    <a href="https://www.linkedin.com/in/crossbridgepartners" target="_blank">LinkedIn</a>
   </nav>
 </header>
 
 <div class="main-container">
-  <h2 style="text-align:center; margin-bottom:30px;">既存のお客様用業務依頼フォーム</h2>
-  <p style="text-align:center; margin-bottom:20px;">
-    業務のご依頼・追加作業のご相談はこちらからお願いいたします。
-  </p>
+  <h2>既存のお客様用業務依頼</h2>
+  <p>ご質問やご依頼は下記フォームよりお気軽にお問い合わせください。</p>
 
+  <!-- Formspreeを使用 -->
   <form action="https://formspree.io/f/xpqjojaw" method="POST" class="contact-form">
-    
+    <label>お名前
+      <input type="text" name="name" required>
+    </label>
     <label>会社名
       <input type="text" name="company" required>
     </label>
-
-    <label>ご担当者様名
-      <input type="text" name="name" required>
+    <label>案件タイトル
+      <textarea name="message" rows="2" required></textarea>
     </label>
-
-    <label>メールアドレス
-      <input type="email" name="email" required>
+    <label>希望単価・希望料金
+      <input type="text" name="Asking price">
     </label>
-
-    <label>ご依頼内容
+    <label>依頼内容詳細
       <textarea name="message" rows="6" required></textarea>
     </label>
-
     <button type="submit">送信</button>
   </form>
 </div>
